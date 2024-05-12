@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 <!--Link css-->
 <link rel="stylesheet" href="Estilos/estilo.css">
+<!-- Link js -->
+<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
 </head>
 <body>
@@ -31,86 +33,264 @@
 </nav>
 </header>
 
+<!-- Slider automatico -->
+<div class="slider container">
+    <div class="slider position"></div>
+</div> 
+
 <!--Parte del Inicio-->
 <section class="inicio" id="inicio">
    <div class="content">
    <h3>Kalao <span>Cakes</span></h3>
-   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis totam deserunt perspiciatis doloremque 
-   dolorum exercitationem placeat sequi consectetur facere 
-   aperiam quo fuga, deleniti ullam ducimus quisquam. Deleniti, laboriosam numquam.</p>
+   <p>"¡Bienvenido a nuestro mundo endulzado en línea! Explora nuestro sitio web para descubrir un universo de deliciosas creaciones reposteras. 
+    Desde exquisitos pasteles hasta tentadores cupcakes, nuestro catálogo ofrece una variedad irresistible de golosinas para satisfacer todos los antojos. 
+   
+   </p>
 </div>
 </section>
 
 <!--Caja de opiniones-->
 <section class="opiniones" id="opiniones">
 
-   <h1 class="heading">opiniones de clientes</h1>
-   <div class="caja-contenedor">
-   <div class="caja">
-   <div class="user">
-   <img src="img/logo.png" alt="">
-   <h3>Pedro</h3>
-    
-   <!--iconos de estrellas-->
-    <div class="stars">
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-       <i class="fa-solid fa-star"></i>
-    </div>
+<!-- Texto Productos -->
+<h1 class="heading">Productos</h1>
+   
+<!-- Parte de slider-productos -->
+<div class="swiper MySwiper">
+<div class="swiper-wrapper">
 
-    <div class="comentarios">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, cumque similique? Id excepturi situt 
-        nisi deserunt quaerat pariatur quam eligendi animi, natus porro, perspiciatis, dicta recusandae consequun.
-    </div>
-    </div>
-    </div>
-
-    <!--iconos de estrellas-->
-    <div class="caja">
-    <div class="user">
+<!-- Producto 1 -->
+<div class="swiper-slide">
+<div class="icons">
+    <i class="fa-solid fa-circle-arrow-left"></i>
     <img src="img/logo.png" alt="">
-    <h3>Ana</h3>
+    <i class="fa-regular fa-heart"></i>
+</div>
+<div class="product-content">
+<div class="product-txt">
+    <span>Red Velvet Cake</span>
+    <h3>Descripcion</h3>
+    <p>
+    Una mini torta de red velvet es un delicioso pastel pequeño hecho con una suave y esponjosa masa 
+    de terciopelo rojo, generalmente relleno y cubierto con una cremosa y dulce crema de queso. 
+    Su color distintivo y su sabor a chocolate suave hacen de esta mini torta un placer irresistible 
+    para cualquier ocasión especial.
+    </p>
+</div>
+<div class="product-img">
+    <img src="img/nemo.png" alt="">
+</div>   
+</div>
+<!-- Bton que dirija al whatsApp -->
+<a href="#" class="btn-1">Pide Ya</a>
+</div>
 
-    <!--iconos de estrellas-->
-    <div class="stars">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-regular fa-star"></i>
-    </div>
-
-    <div class="comentarios">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, cumque similique? Id excepturi situt 
-        nisi deserunt quaerat pariatur quam eligendi animi, natus porro, perspiciatis, dicta recusandae consequun.
-    </div>
-    </div>
-    </div>
-    
-    <div class="caja">
-    <div class="user">
+<!-- Producto 2 -->
+<div class="swiper-slide">
+<div class="icons">
+    <i class="fa-solid fa-circle-arrow-left"></i>
     <img src="img/logo.png" alt="">
-    <h3>Matias</h3>
-            
-    <!--iconos de estrellas-->
-    <div class="stars">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-regular fa-star"></i>
-        <i class="fa-regular fa-star"></i>
-    </div>
+    <i class="fa-regular fa-heart"></i>
+</div>
+<div class="product-content">
+<div class="product-txt">
+    <span>Vainilla-Naranja Cake</span>
+    <h3>Descripcion</h3>
+    <p>
+    Una deliciosa mini torta de vainilla-naranja con capas esponjosas de bizcocho de vainilla impregnado con un 
+    toque fresco y cítrico de jugo y ralladura de naranja, cubierta con una suave crema de vainilla y decorada con 
+    rodajas de naranja para un toque vibrante y refrescante.
+    </p>
+</div>
+<div class="product-img">
+    <img src="img/mini.png" alt="">
+</div>   
+</div>
+<!-- Bton que dirija al whatsApp -->
+<a href="#" class="btn-1">Pide Ya</a>
+</div>
 
-    <div class="comentarios">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, cumque similique? Id excepturi situt 
-        nisi deserunt quaerat pariatur quam eligendi animi, natus porro, perspiciatis, dicta recusandae consequun.
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
+<!-- Producto 3 -->
+<div class="swiper-slide">
+<div class="icons">
+    <i class="fa-solid fa-circle-arrow-left"></i>
+    <img src="img/logo.png" alt="">
+    <i class="fa-regular fa-heart"></i>
+</div>
+<div class="product-content">
+<div class="product-txt">
+    <span>Chocolate Cake</span>
+    <h3>Descripcion</h3>
+    <p>
+    Una mini torta de chocolate es un delicioso postre individual compuesto por una esponjosa base de bizcocho 
+     de chocolate, rellena y cubierta con una suave y cremosa ganache de chocolate. Su tamaño compacto lo hace 
+    perfecto para disfrutar como un indulgente bocado dulce en cualquier momento del día.
+    </p>
+</div>
+<div class="product-img">
+    <img src="img/mom.png" alt="">
+</div>   
+</div>
+<!-- Bton que dirija al whatsApp -->
+<a href="#" class="btn-1">Pide Ya</a>
+</div>
+
+<!-- Producto 4 -->
+<div class="swiper-slide">
+<div class="icons">
+    <i class="fa-solid fa-circle-arrow-left"></i>
+    <img src="img/logo.png" alt="">
+    <i class="fa-regular fa-heart"></i>
+</div>
+<div class="product-content">
+<div class="product-txt">
+    <span>Red Velvet Cake</span>
+    <h3>Descripcion</h3>
+    <p>
+    Una mini torta de red velvet es un delicioso pastel pequeño hecho con una suave y esponjosa masa 
+    de terciopelo rojo, generalmente relleno y cubierto con una cremosa y dulce crema de queso. 
+    Su color distintivo y su sabor a chocolate suave hacen de esta mini torta un placer irresistible 
+    para cualquier ocasión especial.
+    </p>
+</div>
+<div class="product-img">
+    <img src="img/nemo.png" alt="">
+</div>   
+</div>
+<!-- Bton que dirija al whatsApp -->
+<a href="#" class="btn-1">Pide Ya</a>
+</div>
+   
+<!-- Producto 5 -->
+<div class="swiper-slide">
+<div class="icons">
+    <i class="fa-solid fa-circle-arrow-left"></i>
+    <img src="img/logo.png" alt="">
+    <i class="fa-regular fa-heart"></i>
+</div>
+<div class="product-content">
+<div class="product-txt">
+    <span>Vainilla-Naranja Cake</span>
+    <h3>Descripcion</h3>
+    <p>
+    Una deliciosa mini torta de vainilla-naranja con capas esponjosas de bizcocho de vainilla impregnado con un 
+    toque fresco y cítrico de jugo y ralladura de naranja, cubierta con una suave crema de vainilla y decorada con 
+    rodajas de naranja para un toque vibrante y refrescante.
+    </p>
+</div>
+<div class="product-img">
+    <img src="img/mini.png" alt="">
+</div>   
+</div>
+<!-- Bton que dirija al whatsApp -->
+<a href="#" class="btn-1">Pide Ya</a>
+</div>
+
+<!-- Producto 6 -->
+<div class="swiper-slide">
+<div class="icons">
+    <i class="fa-solid fa-circle-arrow-left"></i>
+    <img src="img/logo.png" alt="">
+    <i class="fa-regular fa-heart"></i>
+</div>
+<div class="product-content">
+<div class="product-txt">
+    <span>Chocolate Cake</span>
+    <h3>Descripcion</h3>
+    <p>
+    Una mini torta de chocolate es un delicioso postre individual compuesto por una esponjosa base de bizcocho 
+    de chocolate, rellena y cubierta con una suave y cremosa ganache de chocolate. Su tamaño compacto lo hace 
+    perfecto para disfrutar como un indulgente bocado dulce en cualquier momento del día.
+    </p>
+</div>
+<div class="product-img">
+    <img src="img/mom.png" alt="">
+</div>   
+</div>
+<!-- Bton que dirija al whatsApp -->
+<a href="#" class="btn-1">Pide Ya</a>
+</div>
+
+<!-- Producto 7 -->
+<div class="swiper-slide">
+<div class="icons">
+    <i class="fa-solid fa-circle-arrow-left"></i>
+    <img src="img/logo.png" alt="">
+    <i class="fa-regular fa-heart"></i>
+</div>
+<div class="product-content">
+<div class="product-txt">
+    <span>Red Velvet Cake</span>
+    <h3>Descripcion</h3>
+    <p>
+    Una mini torta de red velvet es un delicioso pastel pequeño hecho con una suave y esponjosa masa 
+    de terciopelo rojo, generalmente relleno y cubierto con una cremosa y dulce crema de queso. 
+    Su color distintivo y su sabor a chocolate suave hacen de esta mini torta un placer irresistible 
+    para cualquier ocasión especial.
+    </p>
+</div>
+<div class="product-img">
+    <img src="img/nemo.png" alt="">
+</div>   
+</div>
+<!-- Bton que dirija al whatsApp -->
+<a href="#" class="btn-1">Pide Ya</a>
+</div>
+
+<!-- Producto 8 -->
+<div class="swiper-slide">
+<div class="icons">
+    <i class="fa-solid fa-circle-arrow-left"></i>
+    <img src="img/logo.png" alt="">
+    <i class="fa-regular fa-heart"></i>
+</div>
+<div class="product-content">
+<div class="product-txt">
+    <span>Vainilla-Naranja Cake</span>
+    <h3>Descripcion</h3>
+    <p>
+    Una deliciosa mini torta de vainilla-naranja con capas esponjosas de bizcocho de vainilla impregnado con un 
+    toque fresco y cítrico de jugo y ralladura de naranja, cubierta con una suave crema de vainilla y decorada con 
+    rodajas de naranja para un toque vibrante y refrescante.
+    </p>
+</div>
+<div class="product-img">
+    <img src="img/mini.png" alt="">
+</div>   
+</div>
+<!-- Bton que dirija al whatsApp -->
+<a href="#" class="btn-1">Pide Ya</a>
+</div>
+
+<!-- Producto 9 -->
+<div class="swiper-slide">
+<div class="icons">
+    <i class="fa-solid fa-circle-arrow-left"></i>
+    <img src="img/logo.png" alt="">
+    <i class="fa-regular fa-heart"></i>
+</div>
+<div class="product-content">
+<div class="product-txt">
+    <span>Chocolate Cake</span>
+    <h3>Descripcion</h3>
+    <p>
+    Una mini torta de chocolate es un delicioso postre individual compuesto por una esponjosa base de bizcocho 
+    de chocolate, rellena y cubierta con una suave y cremosa ganache de chocolate. Su tamaño compacto lo hace 
+    perfecto para disfrutar como un indulgente bocado dulce en cualquier momento del día.
+    </p>
+</div>
+<div class="product-img">
+    <img src="img/mom.png" alt="">
+</div>   
+</div>
+<!-- Bton que dirija al whatsApp -->
+<a href="#" class="btn-1">Pide Ya</a>
+</div>
+
+</div>
+</div>
+
+</section>
 
 <!--Pie de pagina-->
 <div class="footer">
@@ -151,5 +331,24 @@
 </h1>
 </div>
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loop: true,
+        coverflowEffect: {
+            depth:500,
+            modifer:1,
+            slidesShadows: true,
+            rotate:0,
+            stretch:0
+        } 
+    })
+</script>
 </body>
 </html>

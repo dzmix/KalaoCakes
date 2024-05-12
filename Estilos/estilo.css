@@ -34,9 +34,18 @@ overflow-x: hidden;
 
 }
 
+body {
+    position: relative;
+    height: 100%;
+}
+
 /*Color del fondo de la pagina*/
 body{
-    background: whitesmoke;
+    background-color: #323232;
+    font-family: Helvetica Neue, Helvetica;
+    margin: 0;
+    padding: 0;
+    color: #000;
 }
 
 section{
@@ -142,6 +151,40 @@ header label{
     }
 }*/
 
+/* Slider automatico Para centrarlo*/
+.position {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Slider imagen 1 */
+.slider.position{
+    background-image: url(/img/1.jpg);
+    background-size: cover;
+    height: 30%;
+    width: 70%;
+    border-radius: 10px;
+    animation: animate 10s infinite;
+}
+
+/* Establece como animar */
+@keyframes animate {
+    20% {
+        background-image: url(/img/1.jpg);
+        background-size: cover;
+    }
+    40% {
+        background-image: url(/img/2.jpg);
+        background-size: cover;
+    }
+    60% {
+        background-image: url(/img/3.jpg);
+        background-size: cover;
+    }
+}
+
 /*Confg de la palabra Kalao*/
 .inicio .content h3{
     font-size: 3.5rem;
@@ -160,7 +203,7 @@ header label{
 /*Confg del texto debajo KC*/
 .inicio .content p{
     font-size: 1.7rem;
-    color: #666;
+    color: whitesmoke;
     padding: 1rem 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -180,6 +223,102 @@ header label{
     text-transform: uppercase;
 }
 */
+
+
+/* Slider productos */
+.swiper {
+    width: 100%;
+    padding: 150px 0 50px 0;
+}
+
+/* Lo que ocupara en pantalla */
+.swiper.slide {
+    width: 300px;
+    height: 500px;
+    background-color: #323232;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+}
+
+/* Confg del texto slider */
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* Confg iconos */
+.icons i {
+    font-size: 20px;
+    color: wheat;
+}
+
+/* Confg imagen logo */
+.icons img {
+    width: 100px;
+}
+
+/* Confg dentro del slider */
+.product-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Tamaño que ocupara dentro */
+.product-txt {
+    flex-basis: 50%;
+    text-align: justify;
+}
+
+/* Confg Titulo producto */
+.product-txt span {
+    font-size: 20px;
+    color: var(--azulb);
+    font-weight: bold;
+}
+
+/* Confg Subtitulo */
+.product-txt h3 {
+    font-size: 15px;
+    color: wheat;
+    text-transform: uppercase;
+}
+
+/* Tamaño  y color del parrafo */
+.product-txt p {
+    font-size: 14px;
+    color: #c4c4c4;
+}
+
+/* alinear la imagen a la derecha */
+.product-img {
+    flex-basis: 50%;
+    text-align: right;
+}
+
+/* Tamaño de la imagen */
+.product-img img {
+    width: 190px;
+}
+
+/* Confg del boton del slider */
+.btn-1 {
+    display: inline-block;
+    padding: 13px 50px;
+    border: 1px solid wheat;
+    border-radius: 25px;
+    color: wheat;
+    text-decoration: none;
+    margin-top: 40px;
+    font-size: 12px;
+    
+}
+
+
+
+
 
 /*Configuracion de la caja*/
 .opiniones .caja-contenedor{
@@ -312,7 +451,7 @@ header label{
 
 
 
-/*Medidas de adaptacion*/
+/*Medidas de adaptacion*/ 
 @media(max-width:1200px){
     html{
         font-size: 55%;
