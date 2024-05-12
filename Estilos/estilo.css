@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+/*Efecto de barra de escribir*/
+/*@keyframes escribir{
+    from {width:63%}
+    to {width: 35%;}
+}*/
+
+:root{
+    --magt:#f340f3;
+    --azulb:#56d0e0;
+--degradado:linear-gradient(90deg, var(--azulb),var(--magt));
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+
+
+*::selection{
+    background: var(--azulb);
+    color: white;
+}
+
+html{
+    font-size: 62.4%;
+overflow-x: hidden;
+
+}
+
+/*Color del fondo de la pagina*/
+body{
+    background: whitesmoke;
+}
+
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: var(--degradado);
+font-size: 1.8rem;
+color: white;
+cursor: pointer;
+box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .60);
+transition: all .3s linear;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.heading{
+    text-align: center;
+    background: var(--magt);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+/*Color del menu de la pagina*/
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: rgb(107, 107, 107);
+    box-shadow: 0 .5erm 1rem rgba(0, 0, 0, 0, .60);
+padding: 2rem 9%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+z-index: 1000;
+font-family: cursive;
+}
+
+/*Color de Kalao del menu*/
+header .logo span{
+    color: var(--azulb);
+    font-family: cursive;
+}
+
+/*Color de Cakes del menu*/
+header .logo{
+    font-size: 3rem;
+    color: var(--magt);
+    font-family: cursive;
+}
+
+header .navbar a{
+    font-size: 2.4rem;
+    margin-left: 2rem;
+    color: var(--azulb);
+}
+
+header .navbar a:hover{
+    color: var(--magt);
+}
+
+header input{
+    display: none;
+}
+
+/* Icono de 3 rayas del menu*/
+header label{
+    font-size: 3rem;
+    color: var(--magt);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/*Configuracion de la imagen*/
+/*.inicio .image img{
+    width: 35vw;
+    animation: float 3s linear infinite;
+}*/
+
+/*Para que tenga efecto arriba-abajo*/
+/*@keyframes float{
+    0%, 100% {
+        transform:translateY(0rem);
+    } 
+    50%{
+        transform: translateY(-2.5rem);
+    }
+}*/
+
+/*Confg de la palabra Kalao*/
+.inicio .content h3{
+    font-size: 3.5rem;
+    color: var(--azulb);
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*Confg de la palabra Cakes*/
+.inicio .content h3 span{
+    color: var(--magt);
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*Confg del texto debajo KC*/
+.inicio .content p{
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Posible uso de imagen*/
+/*.suscribete{
+    text-align: center;
+    padding: 5rem 1rem;
+    background: url(../img/fondo_sub.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+
+.suscribete h3{
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+*/
+
+/*Configuracion de la caja*/
+.opiniones .caja-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*Config y color de la caja*/
+.opiniones .caja-contenedor .caja{
+    background: white;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    border: .1rem solid whitesmoke;
+    box-shadow: 0 .3rem rgb(128, 123, 123);
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+}
+
+/*Configuracion de la imagen*/
+.opiniones .caja-contenedor .caja .user img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 8rem;
+    width: 8rem;margin-top: 2rem;
+}
+
+/*Color texto user*/
+.opiniones .caja-contenedor .caja .user h3{
+    color: var(--magt);
+    font-size: 2rem;
+}
+/*Color estrellas*/
+.opiniones .caja-contenedor .caja .user .stars i{
+    color: black;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+}
+
+/*Texto de las cajas calificacion*/
+.opiniones .caja-contenedor .caja .comentarios{
+    color: #650c88;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+/*Pie de pagina web*/
+.footer{
+    padding-top: 3rem;
+    background: url(/img/fotazul.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer .caja-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .caja-contenedor .caja{
+    flex: 1 1 25rem;
+    margin: 2rem;
+}
+
+/* Texto SubTitulos de pie de pagina */
+.footer .caja-contenedor .caja h3{
+    font-size: 2.3rem;
+    padding: 1rem 0;
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Color del texto-relleno en el pie de pagina */
+.footer .caja-contenedor .caja p{
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Color texto de links */
+.footer .caja-contenedor .caja a{
+    display: block;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    color: black;
+    text-decoration: underline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/*Linea de separacion*/
+.footer .caja-contenedor .caja a:hover{
+    text-decoration: underline;
+}
+
+.footer .caja-contenedor .caja .info{
+    display: flex;
+    align-items: center;
+} 
+
+/* Color de los iconos de pie de pagina */
+.footer .caja-contenedor .caja .info i{
+    margin: .5rem 0;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background: whitesmoke;
+    color: var(--magt);
+    font-size: 2.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+}
+
+/*Creditos o texto copyright*/
+.footer .creditos{
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: .1rem;
+    color: black;
+    border-top: .1rem solid white;
+    padding: 2.5rem 1rem;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+/*Medidas de adaptacion*/
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:990px){
+    section{
+        padding: 0 3%;
+        padding-top: 7.5rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media(max-width:768px){
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background:white;
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0, 0,0 , 2);
+        box-shadow: 0 .5ram 1rem rgba(0, 0, 0, 0, .1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .2s linear;
+    }
+
+    header .navbar a{
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+  header input:checked ~ .navbar {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+
+  header input:checked~label::before {
+    content: '\f00d';
+    }
+
+    .inicio{
+        flex-flow: column-reverse;
+    }
+
+    .inicio .image img{
+        width: 100%;
+    }
+
+    .inicio .content h3{
+        font-size: 3.6rem;
+    }
+
+    .inicio .content p{
+        font-size: 1.5rem;
+    }
+
+    .acerca_de{
+        background-position: right;
+    }
+
+    .suscribete p{
+        width: auto;
+    }
+}
+
+
+@media(max-width:450px){
+    html{
+        font-size: 49%;
+    }
+
+    .acerca_de .columna .content .bottons a{
+        width: 100%;
+        text-align: center;
+    }
+
+        .acerca_de .columna .content .bottons a:last-child{
+            margin: 1rem 0;
+
+        }
+}
+
+#inicio{
+    color:black;
+    padding-top: 66px;
+}
